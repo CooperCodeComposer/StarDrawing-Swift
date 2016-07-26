@@ -13,7 +13,6 @@ class ViewController: UIViewController {
     
     var starView: StarView?
     var skyView: UIView?
-    var angle: CGFloat = 0.6
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,8 +60,8 @@ class ViewController: UIViewController {
         let width: Int = Int(UIScreen.mainScreen().bounds.size.width)
         let height: Int = Int(UIScreen.mainScreen().bounds.size.height)
         
-        // generates random number from 30-100
-        let randomNumberStars = GKRandomSource.sharedRandom().nextIntWithUpperBound(69) + 30
+        // generates random number from 30-80
+        let randomNumberStars = GKRandomSource.sharedRandom().nextIntWithUpperBound(59) + 30
         
         for _ in 0...randomNumberStars {
             xRandom = CGFloat(GKRandomSource.sharedRandom().nextIntWithUpperBound(width))
