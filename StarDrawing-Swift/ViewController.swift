@@ -74,9 +74,6 @@ class ViewController: UIViewController {
             self.skyView?.addSubview(starView!)
             
         }
-        
     }
-
-
 }
 
